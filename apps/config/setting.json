@@ -1,0 +1,10 @@
+{
+    "mongodb":{
+       "username": "adminTai",
+       "password": "Tai12345",
+       "database":"test"
+    },
+    "jwt": {
+    "secret":"goK!pusp6ThEdURUtRenOwUhAsWUCLheBazl!uJLPlS8EbreWLdrupIwabRAsiBu"
+   }
+ }
