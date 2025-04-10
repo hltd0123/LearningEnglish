@@ -50,7 +50,7 @@ describe('Grammar update API', () => {
         
         expect(res.statusCode).toBe(500);
         expect(res.body.message).toBe("Error updating grammar");
-        expect(res.body.error).isdefined();
+        expect(res.body.error).toBeDefined();
     });
 
     it('TC2: Kiểm tra khi cập nhật grammar thành công có file', async () => {
@@ -67,7 +67,7 @@ describe('Grammar update API', () => {
 
         expect(res.statusCode).toBe(200);
         expect(res.body.message).toBe('Grammar updated successfully');
-        expect(res.body.result).isdefined();
+        expect(res.body.result).toBeDefined();
     });
 
     it('TC3: Kiểm tra khi cập nhật grammar thành công không có file', async () => {
@@ -80,7 +80,7 @@ describe('Grammar update API', () => {
 
         expect(res.statusCode).toBe(200);
         expect(res.body.message).toBe('Grammar updated successfully');
-        expect(res.body.result).isdefined();
+        expect(res.body.result).toBeDefined();
     });
 
     it('TC4: Kiểm tra khi không tìm thấy grammar cần cập nhật', async () => {
